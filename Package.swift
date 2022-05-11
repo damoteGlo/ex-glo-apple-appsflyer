@@ -8,9 +8,8 @@ let package = Package(
     products: [
         .library(name: "AppsFlyerLib", targets: ["AppsFlyerLib"]),
     ],
-    dependencies: [
-    ],
     targets: [
-        .binaryTarget(name: "AppsFlyerLib", path: "AppsFlyerLib.xcframework"),
+        // NOTE: Full AppsFlyerLib has been removed from package to use only STRICT AppsFlyerLib
+        .binaryTarget(name: "AppsFlyerLib", path: "AppsFlyerLib.xcframework")
     ]
 )
